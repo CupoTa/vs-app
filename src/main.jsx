@@ -7,6 +7,7 @@ import { TonConnectUIProvider } from "@tonconnect/ui-react";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css'
 
+import './i18n.js';
 
 import WebApp from '@twa-dev/sdk'
 

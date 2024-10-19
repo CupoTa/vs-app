@@ -8,12 +8,11 @@ import { CONFIG } from '../../config'
 import './AutoFarm.css'
 import { formatPoints, getAutoFarmPoints } from '../../helpers';
 
-const AutoFarm = () => {
+const AutoFarm = ({user}) => {
 
 
     const [activeClass, setActiveClass] = useState(false)
     const [points, setPoints] = useState(0)
-    const user = useSelector(selectUser)
 
     let time = new Date(user.lastTimeClaim)
     time.setSeconds(time.getSeconds() + CONFIG.PERIOD_COOLING)
@@ -31,7 +30,7 @@ const AutoFarm = () => {
 
     useEffect(() => {
         setPoints(getAutoFarmPoints(user.lastTimeClaim, amount))
-    }, [])
+    }, [user.lastTimeClaim])
 
     const updateData = () => {
         

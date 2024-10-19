@@ -4,6 +4,7 @@ import { useBackButton } from '../hooks/useBackButton';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchUser, selectUser } from '../store/slices/userSlice';
 
+
 import WebApp from '@twa-dev/sdk';
 import Loader from '../components/Loader/Loader';
 import BrowserQR from '../components/BrowserQR/BrowserQR';
@@ -16,27 +17,22 @@ const WrapperLayout = () => {
   const dispatch = useDispatch()
 
 
-  if(WebApp.platform === "unknown")
-    return <BrowserQR/>
+  if (WebApp.platform === "unknown")
+    return <BrowserQR />
 
   useBackButton(location.pathname)
 
   useEffect(() => {
-    const getUser = async () => {
-      dispatch(fetchUser())
-    }
-
-    getUser()
+    dispatch(fetchUser())
   }, [])
 
-
-  if(user.loading == "pending") return <Loader/>
+  if (user.loading == "pending") return <Loader />
 
   return (
     <div className='container'>
       <Outlet />
     </div>
-    
+
   );
 };
 

@@ -1,11 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Box2Heart, Controller, House, People, Grid3x2 } from 'react-bootstrap-icons';
 import { IconQuests, IconFriends, IconHome, IconMatrix, IconTables, IconUpgrade } from '../icons/icons'
 
 import './Navigate.css';
-import WebApp from '@twa-dev/sdk';
-
 
 const Navigate = () => {
     return (

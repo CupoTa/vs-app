@@ -23,14 +23,13 @@ const HomePage = () => {
 
     const { minutes, hours, seconds } = useTimer({ expiryTimestamp: time, onExpire: () => setActiveTap(true) })
 
-
     return (
         <div className='row'>
             <div className='col-12'>
                 <InfoTabs/>
             </div>
             <div className='col-12'>
-                <AutoFarm/>
+                <AutoFarm user={user}/>
                 <div className='d-flex justify-content-center align-items-center flex-column w-100 align-content-center'>
                     <div className='all-points d-inline-flex'>
                         <IconPoints/>

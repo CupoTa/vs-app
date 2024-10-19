@@ -20,8 +20,9 @@ export function checkTestTime (user) {
 
 export function getAutoFarmPoints(lastTimeClaim, amount) {
     const time = Date.now() - lastTimeClaim
-    if(lastTimeClaim == 0)
+    if(lastTimeClaim == 0){
         return CONFIG.HELLO_BONUS
+    }
     if(time < CONFIG.PERIOD_COOLING * 1000){
         return (Math.floor(time / 60 / 1000)) * amount
     } else {
