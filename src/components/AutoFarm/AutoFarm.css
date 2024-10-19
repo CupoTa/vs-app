@@ -1,0 +1,43 @@
+.timer-claim {
+    color: rgba(214, 30, 30, 1);
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    gap: 0 3px;
+}
+.wrapper-timer-claim {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 100px;
+    display: inline-flex;
+    width: 150px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0 12px;
+}
+
+.btn-claim {
+    border-radius: 90px;
+    background: rgba(189, 38, 38, 1);
+    color: #ffffff;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 4px 10px;
+    outline: none !important;
+    margin: 0;
+    line-height: 24px;
+}
+.btn-claim:disabled {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+.btn-claim:hover,
+.btn-claim:active {
+    color: #ffffff !important;
+    /* border: 1px solid #C6C6C6; */
+}
+.seconds {
+    font-size: 10px;
+    margin-top: 1px;
+    min-width: 13px;
+}

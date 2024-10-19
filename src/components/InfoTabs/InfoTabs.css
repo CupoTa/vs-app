@@ -1,0 +1,73 @@
+.wrapper-info-block > .nav {
+    gap: 0 5px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+}
+.wrapper-info-block .nav-item {
+    text-align: center;
+    flex-grow: 1;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #ffffff !important;
+    background-color: rgba(189, 38, 38, 1) !important;
+}
+.nav-pills .nav-link, .nav-pills .nav-link:hover, .nav-pills .nav-link:active, .nav-pills .nav-link.disabled {
+    color: #ffffff;
+    border-radius: 8px !important;
+    background-color: rgba(47, 47, 47, 1);
+    padding: 6px;
+    position: relative;
+}
+.nav-pills .nav-link.disabled:before {
+    content: "SOON";
+    position: absolute;
+    background: rgba(189, 38, 38, 1);
+    color: #ffffff;
+    font-weight: 300;
+    right: -4px;
+    top: -2px;
+    font-size: 8px;
+    text-transform: lowercase;
+    padding: 0px 5px 1px;
+    border-radius: 30px;
+}
+.wrapper-info-app {
+    display: flex;
+    gap: 5px;
+    padding: 7px 0;
+    flex-wrap: wrap;
+}
+.wrapper-info-app > div {
+    flex: 1 0 0;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    min-height: 156px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    word-wrap: break-all;
+    max-width: 113px;
+    padding: 0 10px;
+}
+.desc-item {
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 10px 10px 0;
+    font-weight: 200;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    
+}
+.count {
+    color: rgba(214, 30, 30, 1);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+}
+.count > small {
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 2px;
+}

@@ -1,0 +1,92 @@
+.loader_wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .6);
+    margin-top: auto;
+    perspective: 1000px;
+    perspective-origin: center -5em;
+}
+
+.side,
+.container-loader {
+    width: 5em;
+    height: 5em;
+}
+
+.container-loader {
+    /* border: 2px dotted white; */
+    transform-style: preserve-3d;
+    animation: rotate 8s infinite linear;
+}
+
+.container-loader:before,
+.container-loader:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 5em;
+    height: 5em;
+    /* border: 2px dotted white; */
+}
+
+.container-loader:before {
+    transform: rotateX(90deg);
+}
+
+.container-loader:after {
+    transform: rotatey(90deg);
+}
+
+.side {
+    position: absolute;
+    width: 5em;
+    height: 5em;
+    border: 2px solid white;
+    border-radius: .5em;
+    opacity: .8;
+}
+
+.back {
+    transform: translateZ(-2.5em);
+    background: url('./favicon.svg') center;
+    background-size: 5em 5em;
+}
+
+.left {
+    transform: translateX(-2.5em) rotateY(90deg);
+    background: url('./favicon.svg') center;
+    background-size: 5em 5em;
+}
+
+.right {
+    transform: translateX(2.5em) rotateY(90deg);
+    background: url('../../assets/vs-circle.png') center;
+    background-size: 5em 5em;
+}
+
+.top {
+    transform: translateY(-2.5em) rotateX(90deg);
+    background: url('../../assets/vs-circle.png') center;
+    background-size: 5em 5em;
+}
+
+.bottom {
+    transform: translateY(2.5em) rotateX(90deg);
+    background: url('./favicon.svg') center;
+    background-size: 5em 5em;
+}
+
+.front {
+    transform: translateZ(2.5em);
+    background: url('../../assets/vs-circle.png') center;
+    background-size: 5em 5em;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotatex(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}

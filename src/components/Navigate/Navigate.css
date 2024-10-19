@@ -1,0 +1,64 @@
+.wrapper-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background: #000;
+    border-radius: 15px;
+    gap: 0 5px;
+}
+.wrapper-nav a {
+    color: var(--tg-theme-button-text-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: calc(8px + 0.3vw);
+    font-weight: 700;
+    display: inline-flex;
+    width: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0px;
+    height: 100%;
+    color: rgba(255, 255, 255, .5);
+}
+.nav-link.link-disabled, .nav-link.link-disabled:hover, 
+.nav-link.link-disabled > svg path, .nav-link.link-disabled:hover > svg path {
+    color: rgba(255, 255, 255, .5) !important;
+    stroke: rgba(255, 255, 255, .5) !important;
+    fill: rgba(255, 255, 255, .5) !important;
+    position: relative;
+}
+.nav-link.link-disabled::after {
+    content: "SOON";
+    position: absolute;
+    background: rgba(189, 38, 38, 1);
+    color: #ffffff;
+    font-weight: 300;
+    right: -4px;
+    top: -2px;
+    font-size: 8px;
+    text-transform: lowercase;
+    padding: 0px 5px 1px;
+    border-radius: 30px;
+}
+.nav-link > span {
+    margin-top: calc(5px + .5vh);
+}
+.wrapper-nav a > svg path {
+    stroke: #ffffff;
+    fill: #ffffff;
+}
+.wrapper-nav a.active, .wrapper-nav a.active > svg path {
+    /* color: var(--bs-nav-link-hover-color);
+    stroke: var(--bs-nav-link-hover-color); */
+    color: rgba(255, 255, 255, .5);
+    stroke: rgba(189, 38, 38, 1);
+    fill: rgba(189, 38, 38, 1);
+}
+.wrapper-nav a:hover, .wrapper-nav a:hover > svg path {
+    color: rgba(255, 255, 255, .5);
+    fill: rgba(189, 38, 38, 1);
+    stroke: rgba(189, 38, 38, 1);
+}
+
+

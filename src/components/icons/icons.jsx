@@ -1,0 +1,12 @@
+export { IconQuests } from "./IconQuests";
+export { IconTables } from "./IconTables";
+export { IconFriends } from "./IconFriends";
+export { IconUpgrade } from "./IconUpgrade";
+export { IconMatrix } from "./IconMatrix";
+export { IconHome } from "./IconHome";
+export { IconSettings } from "./IconSettings";
+export { IconTimer } from "./IconTimer";
+export { IconPoints } from "./IconPoints";
+export { IconTotalPoints } from './IconTotalPoints';
+export { IconTotalTon } from './IconTotalTon';
+export { IconUsers } from './IconUsers';

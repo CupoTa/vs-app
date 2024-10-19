@@ -1,0 +1,29 @@
+.wrapper-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px 5px;
+    background-color: black;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+}
+
+.name-user {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+.points {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    gap: 0px 10px;
+}
+.points > span {
+    font-size: 18px;
+    line-height: 100%;
+    font-weight: 400;
+    display: flex;
+}
+.points > svg {
+    width: 24px;
+}
