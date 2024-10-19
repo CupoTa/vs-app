@@ -46,7 +46,7 @@ a {
     display: flex;
     height: 100%;
     flex-direction: column;
-    padding: 55px 0 85px;
+    padding: 65px 0 95px;
 }
 
 .info {
@@ -285,6 +285,9 @@ button.btn-tap>img {
 }
 .timer-tap > svg {
     stroke: #fff;
+}
+.timer-tap > svg g {
+    stroke-width: 1px;
 }
 .wrapper-info-block {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
