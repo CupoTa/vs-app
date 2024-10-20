@@ -1,0 +1,27 @@
+.wrapper-switcher {
+    display: flex;
+    gap: 0 10px;
+}
+.wrapper-switcher > button {
+    background: rgba(47, 47, 47, 1);
+    color: #ffffff;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    width: 88px;
+    height: 40px;
+}
+.wrapper-switcher > button:disabled {
+    background: #ffffff;
+    color: rgba(21, 21, 21, 1);
+}
+.title-section {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.section-language {
+    padding-top: 15px;
+}

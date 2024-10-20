@@ -16,6 +16,9 @@ const manifestUrl =
 
 WebApp.ready();
 
+// WebApp.setHeaderColor("rgba(189, 38, 38, 1)")
+WebApp.setBottomBarColor("rgba(189, 38, 38, 1)")
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Provider store={store}>

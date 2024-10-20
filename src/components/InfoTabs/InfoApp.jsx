@@ -1,18 +1,22 @@
 import React from 'react';
 import { IconUsers, IconTotalPoints, IconTotalTon } from '../icons/icons';
+import { useTranslation } from 'react-i18next';
 
 const InfoApp = () => {
+
+    const { t, i18n } = useTranslation()
+
     return (
         <div className='wrapper-info-app'>
             <div>
                 <span><IconUsers /></span>
                 <div className='count'>150<small>k</small></div>
-                <div className='desc-item'>Total users in game</div>
+                <div className='desc-item'>{ t("total.users") }</div>
             </div>
             <div>
                 <span><IconTotalPoints /></span>
                 <div className='count'>6,000<small>kk</small></div>
-                <div className='desc-item'>Total points farmed</div>
+                <div className='desc-item'>{ t("total.points") }</div>
             </div>
             <div>
                 <span><IconTotalTon /></span>
@@ -29,7 +33,7 @@ const InfoApp = () => {
                     </svg>
                     1,507
                     <small className='pt-2'>k</small></div>
-                <div className='desc-item'>Total TON collected</div>
+                <div className='desc-item'>{ t("total.ton") }</div>
             </div>
         </div>
     );

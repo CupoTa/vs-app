@@ -7,7 +7,7 @@ const Quest = ({quest}) => {
     return (
         <div>
             { quest.id }
-            { quest.todo }
+            { quest?.todo }
         </div>
     );
 };

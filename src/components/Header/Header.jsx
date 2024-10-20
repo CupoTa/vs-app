@@ -2,17 +2,17 @@ import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { useTonConnectUI } from "@tonconnect/ui-react";
 import { selectUser } from '../../store/slices/userSlice';
-import { Database } from 'react-bootstrap-icons';
 import { formatPoints } from '../../helpers';
 import { IconSettings, IconPoints } from '../icons/icons';
 
 import './Header.css'
 import WebApp from '@twa-dev/sdk';
-import { Link } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 const Header = () => {
 
     const user = useSelector(selectUser)
+    const location = useLocation()
     const [_, setOptions] = useTonConnectUI()
 
     useEffect(() => {
@@ -26,10 +26,10 @@ const Header = () => {
             </div>
             <div className='name-user'>
                 {user?.tgUserName}
-                <div className=''>
-                    <Link to={'/profile'}>
+                <div className='header-nav'>
+                    <NavLink to={'/profile'} state={{ parent: location.pathname }} >
                         <IconSettings size={28} />
-                    </Link>
+                    </NavLink>
                 </div>
             </div>
         </div>

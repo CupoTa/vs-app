@@ -1,7 +1,22 @@
 {
-    "title": "Welcome to react using react-i18next",
-    "description": {
-      "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
-      "part2": "Switch language between english and german using buttons above."
+    "quests": "Quests",
+    "loader-quests": "Get quests",
+    "profile": "Profile",
+    "language": "Language",
+    "games-stats": "Games stats",
+    "completed": "completed",
+    "see-all": "See all",
+    "total": {
+        "users": "Total users in game",
+        "points": "Total points farmed",
+        "ton": "Total TON collected"
+    },
+    "nav": {
+        "home": "Home",
+        "game": "Game",
+        "quests": "Quests",
+        "upgrade": "Box",
+        "friends": "Friends",
+        "matrix": "Matrix"
     }
   }

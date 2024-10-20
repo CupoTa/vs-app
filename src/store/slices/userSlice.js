@@ -54,6 +54,7 @@ export const selectUser = (state) => state.user
 export const fetchUser = () => async (dispatch) => {
 
     dispatch(userLoading());
+    
     // removeItems()
 
     // Проверяем есть ли в сторэйдж телеги поле session 
@@ -69,7 +70,10 @@ export const fetchUser = () => async (dispatch) => {
         if(result.timestamp == result.user.timestamp){
             // Да
             // записали в юзера из сторэйдж телеги
-            dispatch(userReceived(result.user))
+            setTimeout(() => {
+                dispatch(userReceived(result.user))
+            }, 1000)
+            
             console.log("БЕЗ ЗАПРОСА", result)
         } else {
             // Нет
@@ -97,7 +101,9 @@ export const fetchUser = () => async (dispatch) => {
                     }
                 }
                 setStorageItem("session", JSON.stringify(session))
-                dispatch(userReceived(user))
+                setTimeout(() => {
+                    dispatch(userReceived(user))
+                }, 1000)
                 console.log("ПОСЛЕ ЗАПРОСА", result)
             });
 
@@ -115,7 +121,9 @@ export const fetchUser = () => async (dispatch) => {
             user: user
         }
         setStorageItem("session", JSON.stringify(session))
-        dispatch(userReceived(user))
+        setTimeout(() => {
+            dispatch(userReceived(user))
+        }, 1000)
         console.log("NO SESSION", err)
     })
 

@@ -32,14 +32,11 @@ export const fetchQuests = () => async (dispatch) => {
     fetch('https://dummyjson.com/todos?limit=10&skip=0')
             .then(res => res.json())
             .then((t) => {
-                
-                
+                setTimeout(() => {
+                    dispatch(questsReceived(data))
+                }, 2000)
             })
 
-            setTimeout(() => {
-                dispatch(questsReceived(data))
-            }, 5000)
-    
 }
 
 export default questsSlice.reducer

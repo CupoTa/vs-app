@@ -11,6 +11,7 @@
     left: 10px !important;
     bottom: 5px !important;
     width: 366px;
+    z-index: 30 !important;
 }
 .wrapper-nav a {
     color: var(--tg-theme-button-text-color);

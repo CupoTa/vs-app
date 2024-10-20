@@ -1,0 +1,30 @@
+.wrapper-progress-quests {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 10px;
+}
+.wrapper-completed {
+    font-size: 14px;
+    color: rgba(255, 255, 255, .5);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 3px;
+}
+a.no-wrap {
+    text-wrap: nowrap;
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    padding: 4px 15px;
+    background: rgba(189, 38, 38, 1);
+    border-radius: 100px;
+}
+.quests-progress {
+    height: 4px !important;
+}
+.quests-progress .progress-bar {
+    background: rgba(189, 38, 38, 1) !important;
+}

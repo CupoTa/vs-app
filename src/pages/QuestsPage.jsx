@@ -11,7 +11,7 @@ const LoaderQuests = () => {
 
     return (
         <div className='wrapper-loader-quests'>
-            <h6>{t('title')}</h6>
+            <h6>{t('loader-quests')}</h6>
             <div className="loader-quests"></div>
         </div>
     )
@@ -19,7 +19,7 @@ const LoaderQuests = () => {
 
 const QuestsPage = () => {
 
-
+    const { t, i18n } = useTranslation();
     // Создать локальный стейт и сессию для квестов
     // По подобию userSlice
     const dispatch = useDispatch()
@@ -33,7 +33,7 @@ const QuestsPage = () => {
 
     return (
         <>
-            <h3 className='title-page'>Задания ({0}/{quests.data.length})</h3>
+            <h3 className='title-page'>{ t('quests') } ({0}/{quests.data.length})</h3>
             {quests.data.length > 0 ?
                 <div>
                     {

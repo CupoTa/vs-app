@@ -355,3 +355,7 @@ h3.title-page {
       19px 0     0 0px, 38px 0     0 5px, 57px 0     0 0px,
       19px 19px  0 5px, 38px 19px  0 0px, 57px 19px  0 0px}
   }
+  .s-enter-active.s-enter-to {
+    z-index: 100000;
+    position: relative;
+  }
