@@ -1,0 +1,22 @@
+{
+    "quests": "Quests",
+    "loader-quests": "Get quests",
+    "profile": "Profile",
+    "language": "Language",
+    "games-stats": "Games stats",
+    "completed": "completed",
+    "see-all": "See all",
+    "total": {
+        "users": "Total users in game",
+        "points": "Total points farmed",
+        "ton": "Total TON collected"
+    },
+    "nav": {
+        "home": "Home",
+        "game": "Game",
+        "quests": "Quests",
+        "upgrade": "Box",
+        "friends": "Friends",
+        "matrix": "Matrix"
+    }
+  }
