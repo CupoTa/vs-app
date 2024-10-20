@@ -11,10 +11,12 @@ import MainLayout from './layouts/MainLayout';
 import GamingLayout from './layouts/GamingLayout';
 import WrapperLayout from './layouts/WrapperLayout';
 import TapGamePage from './pages/TapGamePage';
+import NotFound from './components/NotFound';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<WrapperLayout />}>
+      <Route path="*" element={<NotFound />} />
       <Route path="/tap-game" element={<TapGamePage/>}/>
       <Route path="/" element={<MainLayout />}>
         <Route index element={<HomePage />} />
