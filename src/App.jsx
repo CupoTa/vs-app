@@ -11,7 +11,7 @@ import MainLayout from './layouts/MainLayout';
 import GamingLayout from './layouts/GamingLayout';
 import WrapperLayout from './layouts/WrapperLayout';
 import TapGamePage from './pages/TapGamePage';
-import NotFound from './components/NotFound';
+import NotFound from './pages/NotFound';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
