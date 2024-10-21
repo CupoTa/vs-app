@@ -15,12 +15,12 @@ import NotFound from './pages/NotFound';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<WrapperLayout />}>
-      <Route path="*" element={<NotFound />} />
+    <Route path="/" element={<WrapperLayout />} >
+      {/* <Route path="*" element={<NotFound />} /> */}
       <Route path="/tap-game" element={<TapGamePage/>}/>
       <Route path="/" element={<MainLayout />}>
         <Route index element={<HomePage />} />
-        <Route path="quets" element={<QuestsPage />} />
+        <Route path="quests" element={<QuestsPage />} />
         <Route path="magic-box" element={<MagicBoxPage />} />
         <Route path="profile" element={<ProfilePage />} />
         <Route path="matrix" element={<MatrixPage />} />
@@ -30,7 +30,7 @@ const router = createBrowserRouter(
         <Route index element={<GamingPage />} />
       </Route>
     </Route>
-  )
+  ), { basename: import.meta.env.BASE_URL }
 )
 
 function App({ routes }) {

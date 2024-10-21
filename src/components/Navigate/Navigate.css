@@ -7,10 +7,10 @@
     gap: 0 5px;
     background: rgba(255, 255, 255, 0.13);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    right: 8px !important;
-    left: 10px !important;
+    right: 5px !important;
+    left: 5px !important;
     bottom: 5px !important;
-    width: 366px;
+    width: 100%;
     z-index: 30 !important;
 }
 .wrapper-nav a {

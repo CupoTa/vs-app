@@ -16,6 +16,10 @@ i18n
         interpolation: {
             escapeValue: false,
         },
+        // backend: {
+        //     // путь к файлам перевода
+        //     loadPath: `${import.meta.env.BASE_URL}/locales/{{lng}}/{{ns}}.json`, // замените на ваш путь
+        //   },
     });
 
 

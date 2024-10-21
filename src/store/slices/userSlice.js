@@ -54,7 +54,6 @@ export const selectUser = (state) => state.user
 export const fetchUser = () => async (dispatch) => {
 
     dispatch(userLoading());
-    
     // removeItems()
 
     // Проверяем есть ли в сторэйдж телеги поле session 

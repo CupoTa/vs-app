@@ -25,7 +25,7 @@ const Navigate = () => {
                 </a>
             </div>
             <div>
-                <NavLink to={'/quets'} state={{ parent: location.pathname }} className={'nav-link'}>
+                <NavLink to={'/quests'} state={{ parent: location.pathname }} className={'nav-link'}>
                     <IconQuests size={28}/>
                     <span>{ t('nav.quests') }</span>
                 </NavLink>

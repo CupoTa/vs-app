@@ -14,10 +14,10 @@ const QuestsStats = () => {
             <div className='title-section'>{ t('quests') }</div>
             <div className='wrapper-progress-quests'>
                 <div className='wrapper-completed'>
-                   13/30 { t('completed') } 
+                   13/30 { t('completed') }
                    <ProgressBar className='quests-progress' now={13} max={30}/>
                 </div>
-                <Link className='no-wrap'>{ t('see-all') }</Link>
+                <Link to="/quests" className='no-wrap'>{ t('see-all') }</Link>
             </div>
         </div>
     );

@@ -5,10 +5,10 @@
     background: rgba(255, 255, 255, 0.15);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-    right: 8px !important;
-    left: 10px !important;
+    right: 5px !important;
+    left: 5px !important;
     top: 5px !important;
-    width: 366px;
+    width: auto;
 }
 
 .name-user {
