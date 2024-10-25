@@ -31,5 +31,7 @@
             "lost": "Total VS lost",
             "received": "Total VS received"
         }
-    }
+    },
+    "donate": "Sending",
+    "connect": "Connect wallet"
   }
