@@ -1,8 +1,75 @@
-.wrapper-game-item {
-
-}
 .gamesStats-section {
-    padding: 15px 0;
+    padding: 20px 0 15px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-between;
+}
+.gamesStats-section > div {
+    background: rgba(255, 255, 255, 0.05);
+    flex: 0 1 calc(33.33% - 4px);
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px;
+}
+.game-name {
+    font-size: 10px;
+    text-align: center;
+    line-height: 12px;
+    font-weight: 300;
+    margin: 5px 0 10px;
+    min-height: 24px;
+}
+.game-count-title {
+    font-size: 10px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 15px;
+    font-weight: 300;
+}
+.game-count {
+    color: rgba(214, 30, 30, 1);
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0 0 5px;
+    line-height: 24px;
+}
+.game-stats {
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 10px;
+    margin-top: 10px;
+}
+.game-stats > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.game-stats > div > span:not(.game-name) {
+    color: rgba(214, 30, 30, 1);
+    font-size: 10px;
+    font-weight: 300;
+}
+.game-stats > div > span.game-name {
+    padding: 0;
+    margin: 0;
+    min-height: initial;
+}
+.game-stats > p {
+    font-size: 11px;
+    text-align: center;
+    line-height: 16px;
+    margin: 0;
+    font-weight: 200;
+}
+span.total-points {
+    color: rgba(214, 30, 30, 1);
+    font-size: 24px;
+    line-height: 24px;
+    padding-top: 10px;
 }

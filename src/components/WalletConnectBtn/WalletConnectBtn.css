@@ -1,0 +1,47 @@
+.wrapper-button-ton {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 25px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.wrapper-button-ton>.button-ton {
+    width: 100% !important;
+}
+
+.wrapper-button-ton>div,
+.wrapper-button-ton>div div {
+    width: 100%;
+}
+
+.wrapper-button-ton>div button {
+    width: 100%;
+    padding: 30px;
+    background: rgba(33, 192, 195, 1);
+    border-radius: 104px;
+}
+.wrapper-button-ton>div>button:hover {
+    transform: initial !important;
+}
+tc-root *{
+    font-family: "Inter", sans-serif !important;
+}
+.wrapper-button-ton>div button>div {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.wrapper-button-ton>div button>svg, .wrapper-button-ton>div button>svg > path {
+    stroke: #000000;
+    fill: #000000;
+}
+
+.s-enter-active.s-enter-to {
+    position: absolute !important;
+    right: 0;
+    backdrop-filter: blur(50px);
+    overflow: hidden !important;
+} 

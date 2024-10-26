@@ -4,7 +4,9 @@ import { useTimer } from 'react-timer-hook';
 import { useSelector, useDispatch } from 'react-redux';
 import { selectUser, updateUser } from '../store/slices/userSlice';
 import { checkTime, checkTestTime } from '../helpers';
-import { CONFIG } from '../config'
+import { CONFIG } from '../config';
+import { useTranslation } from 'react-i18next';
+import { IconDataBase, IconTimerTap } from '../components/icons/icons'
 
 import WebApp from '@twa-dev/sdk';
 
@@ -12,6 +14,7 @@ const TapGamePage = () => {
 
     const [startGame, setStartGame] = useState(false)
     const [points, setPoints] = useState(0)
+    const { t, i18n } = useTranslation()
 
     const user = useSelector(selectUser)
     const dispatch = useDispatch()
@@ -44,15 +47,23 @@ const TapGamePage = () => {
         dispatch(updateUser(updateData))
     }
 
+    function formatTapPoints(points) {
+        return new Intl.NumberFormat('en-En').format(points)
+    }
+
 
     return (
-        <div className='d-flex flex-column justify-content-start align-items-center h-100'>
-            <h1 className='text-center'>
-                TapGame
-            </h1>
+        <div className='d-flex flex-column justify-content-center align-items-center vh-100 w-100'>
             <div className='info-game'>
-                <div className='points-info'>{points}</div>
-                <div className='time-info'>{totalSeconds < 10 ? "0" + totalSeconds : totalSeconds}</div>
+                <div className='title-made'>{t('made_for_time')}</div>
+                <div className='points-info'>
+                    <span className='icon'>
+                        <IconDataBase />
+                    </span>
+                    <span>
+                        {formatTapPoints(points)}
+                    </span>
+                </div>
             </div>
             {
                 checkTime(user) &&
@@ -64,21 +75,14 @@ const TapGamePage = () => {
                 !checkTime(user) &&
                 <>
                     <p>Ждем вас через 8 часов</p>
-                    <div className='animate-result'>
-                        <div className='points-total-tap'>{ points }</div>
-                        <p>A</p>
-                        <p>B</p>
-                        <p>C</p>
-                        <p>D</p>
-                        <p>I</p>
-                        <p>F</p>
-                        <p>J</p>
-                        <p>K</p>
-                        <p>L</p>
-                    </div>
                 </>
 
             }
+            <div className='info-timer'>
+                <span><IconTimerTap /></span>
+                <span>{totalSeconds < 10 ? "0" + totalSeconds : totalSeconds}</span>
+                <div>{ user.coeff * CONFIG.BASE_REWARD_TAP } VS/tap</div>
+            </div>
         </div>
     );
 };

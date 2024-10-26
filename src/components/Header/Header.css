@@ -9,6 +9,7 @@
     left: 5px !important;
     top: 5px !important;
     width: auto;
+    backdrop-filter: blur(100px);
 }
 
 .name-user {

@@ -88,7 +88,7 @@ export const fetchUser = () => async (dispatch) => {
                     points: 1074010,
                     lastTimeTap: 1729164688072,
                     lastTimeClaim: 1729164688072,
-                    coeff: 3,
+                    coeff: 20,
                     timestamp: Date.now()
                 }
         

@@ -12,6 +12,7 @@
     bottom: 5px !important;
     width: 100%;
     z-index: 30 !important;
+    backdrop-filter: blur(100px);
 }
 .wrapper-nav a {
     color: var(--tg-theme-button-text-color);

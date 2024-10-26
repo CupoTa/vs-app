@@ -1,6 +1,6 @@
 import { getHttpEndpoint } from "@orbs-network/ton-access";
 import { CHAIN } from "@tonconnect/ui-react";
-import { TonClient } from "ton";
+import { TonClient } from "@ton/ton";
 import { useAsyncInitialize } from "./useAsyncInitialize";
 import { useTonConnect } from "./useTonConnect";
 
@@ -11,11 +11,12 @@ export function useTonClient() {
         client: useAsyncInitialize(async ()=>{
             if(!network) return;
 
-            return new TonClient({
+            const t = new TonClient({
                 endpoint: await getHttpEndpoint({
                     network: network === CHAIN.MAINNET ? "mainnet" : "testnet"
                 })
             })
+            return t
         }, [network])
     }
 }

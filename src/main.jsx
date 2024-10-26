@@ -12,7 +12,7 @@ import './i18n.js';
 import WebApp from '@twa-dev/sdk'
 
 const manifestUrl =
-  "https://alefmanvladimir.github.io/my-twa/tonconnect-manifest.json";
+  "https://cupota.github.io/vs-app/tonconnect-manifest.json";
 
 WebApp.ready();
 

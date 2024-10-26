@@ -1,0 +1,61 @@
+.wrapper-info-address {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.btn-donate {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: rgba(197, 27, 0, 1);
+    border-radius: 104px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+}
+.btn-connect {
+    background: rgba(33, 192, 195, 1);
+    color: #000000;
+}
+.btn-connect > svg, .btn-connect > svg > path {
+    stroke: #000000;
+    fill: #000000;
+}
+.wrapper-count-input {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: fit-content;
+    border-radius: 90px;
+    background: rgba(255, 255, 255, 0.1);
+    height: 48px;
+    width: 143px
+}
+.control {
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.count-value {
+    font-size: 24px;
+    font-weight: 600;
+    width: 60px;
+    text-align: center;
+}

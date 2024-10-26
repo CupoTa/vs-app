@@ -68,194 +68,72 @@ a {
 
 .info-game {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 35px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
     width: 100%;
 }
+.info-timer {
+    margin-top: 55px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.info-timer > span {
+    min-width: calck(50% - 5px);
+}
+.info-timer > div {
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, .5);
+}
+.title-made {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, .5);
+    margin-bottom: 12px;
 
+}
+.points-info {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.points-info > span.icon {
+    background: rgba(33, 192, 195, 1);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.points-info > svg, .points-info svg path {
+    stroke: #000000;
+    fill: #000000;
+}
+.points-info span + span {
+    width: 84px;
+    text-align: center;
+    margin-left: 10px;
+}
 button.btn-tap {
     pointer-events: initial;
 }
 
 button.btn-tap>img {
     border: 1px solid red;
-}
-
-.animate-result {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    overflow: hidden;
-    align-items: center;
-}
-
-.animate-result p {
-    position: absolute;
-    bottom: 150px;
-    font-weight: bold;
-    font-size: 22px;
-    transition: transform 2s;
-    display: inline-block;
-    padding: 3px;
-    margin: 0;
-    line-height: 90%;
-    opacity: 0;
-}
-
-.animate-result p:nth-child(1) {
-    color: red;
-    animation: saluteA 1s ease 1;
-    background-image: linear-gradient(0.25turn, #2E9AFF, #FFD829);
-}
-
-@keyframes saluteA {
-    from {
-        bottom: 150px;
-        opacity: 1;
-    }
-
-    to {
-        transform: translate(200px, -200px) rotate(360deg);
-        opacity: 0;
-    }
-}
-
-.animate-result p:nth-child(2) {
-    color: white;
-    animation: saluteB 1.2s ease 1;
-    background-image: linear-gradient(#F498AD 25%, #2E9AFF 25% 50%, #FFD829 75%);
-}
-
-@keyframes saluteB {
-    from {
-        bottom: 150px;
-        opacity: 1;
-    }
-
-    to {
-        transform: translate(-200px, -200px) rotate(360deg);
-        opacity: 0;
-    }
-}
-
-.animate-result p:nth-child(3) {
-    color: greenyellow;
-    animation: saluteC 1.3s ease 1;
-    background-image: linear-gradient(#F498AD 25%, #2E9AFF 25% 50%, #FFD829 75%);
-}
-
-@keyframes saluteC {
-    from {
-        bottom: 150px;
-        opacity: 1;
-    }
-
-    to {
-        transform: translate(-100px, -290px) rotate(360deg) scale(1.1);
-        opacity: 0;
-    }
-}
-
-.animate-result p:nth-child(4) {
-    color: palevioletred;
-    animation: saluteD 0.8s ease 1;
-}
-
-@keyframes saluteD {
-    from {
-        bottom: 150px;
-        opacity: 1;
-    }
-
-    100% {
-        transform: translate(-130px, -250px) rotate(360deg);
-        opacity: 0;
-    }
-}
-.animate-result p:nth-child(5) {
-    color: red;
-    animation: saluteI .7s ease 1;
-}
-
-@keyframes saluteI {
-    from {
-        bottom: 150px;
-        opacity: 1;
-    }
-
-    to {
-        transform: translate(120px, -200px) rotate(360deg);
-        opacity: 0;
-    }
-}
-
-.animate-result p:nth-child(6) {
-    color: white;
-    animation: saluteF 1.4s ease 1;
-}
-
-@keyframes saluteF {
-    from {
-        bottom: 150px;
-        opacity: 1;
-    }
-
-    to {
-        transform: translate(-220px, -190px) rotate(360deg);
-        opacity: 0;
-    }
-}
-
-.animate-result p:nth-child(7) {
-    color: blueviolet;
-    animation: saluteD 0.8s ease 1;
-}
-
-@keyframes saluteD {
-    from {
-        bottom: 150px;
-        opacity: 1;
-    }
-
-    100% {
-        transform: translate(115px, -270px) rotate(360deg) scale(1.07);
-        opacity: 0;
-    }
-}
-.animate-result p:nth-child(8) {
-    color: red;
-    animation: saluteI .7s ease 1;
-}
-
-@keyframes saluteI {
-    from {
-        bottom: 150px;
-        opacity: 1;
-    }
-
-    to {
-        transform: translate(75px, -280px) rotate(360deg) scale(1.02);
-        opacity: 0;
-    }
-}
-
-.animate-result p:nth-child(9) {
-    color: white;
-    background-image: linear-gradient(-30deg, #2E9AFF, #F498AD);
-    animation: saluteF 1.2s ease 1;
-}
-
-@keyframes saluteF {
-    from {
-        bottom: 150px;
-        opacity: 1;
-    }
-    to {
-        transform: translate(0px, -270px) rotate(360deg);
-        opacity: 0;
-    }
 }
 .info-tap {
     display: flex;
