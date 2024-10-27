@@ -33,5 +33,6 @@
         }
     },
     "donate": "Sending",
-    "connect": "Connect wallet"
+    "connect": "Connect wallet",
+    "made_for_time": "Made for this time"
   }
